@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DİSPLAY</title>
+    <link rel="stylesheet" href="./display.css">
+<style>
+    a{
+background-color: aqua;
+margin: 20px;
+/* yukardan ve aşağıdan margin almazlar. display inline block yaparsak 4 taraftan da alır. */
+/* padding verdiğimizde divleri aşağı itmedi. */
+padding: 50px;
+/* display: inline-block; */
+width: 2000px;
+height: 2000px;
+/* inline olduğu için genişlik ve yükseklik te alamazlar. */
+
+    }
+
+    button{
+background-color: blueviolet;
+/* butonlar default olarak display inline blocktutr.  bunlara padding margin ve width vw height verebiliriz.*/
+
+/*  ama burda padding verince alta da indirir. divleri aşağı ittirir. */
+padding: 20px;
+    }
+
+    span{
+background-color: cadetblue;
+margin: 20px;
+padding: 50px;
+display: block;  /* bunu verince padding ve margin değerlerini verebiliyoruz etkiler artık yoksa inline elementlere margin ve padding veremiyoruz sadce sağdan ve soldan etki eder.*/
+    }
+
+    .box{
+background-color: chartreuse;
+margin: 5px;
+width: 100px;
+height: 100px ;
+/* bunlara width ve hight verebilriz. block element oldğu için. */
+
+/* display: inline-block; bunlar yanına birşey almazlar ve ancak bu kutuları yanyana almak için display inline block yapmalıyız. */
+display: inline-block;
+    }
+
+    #box2{
+        background-color: blue;
+/* display :none; yerine birini alır. kendi görünmez. */
+/* visibility: hidden; bunu yaptığımızda yerine kimseyi almaz ama kendi de gözükmez. */
+
+
+    }
+    #box22{
+        background-color:chocolate ;
+/* display :none; yerine birini alır. kendi görünmez. */
+/* visibility: hidden; bunu yaptığımızda yerine kimseyi almaz ama kendi de gözükmez. */
+
+    }
+</style>
+
+</head>
+<body>
+    <!--? inline  Elements -->
+<a href="">clarusway</a>
+<button>clarusway</button>
+<span>hello may name is span</span>
+
+<!-- sadece içerikleri kadar yer kaplamış oldular -->
+
+<!-- ? Block Elements -->
+<div class="box">div1</div>
+<div class="box" id="box2">div2</div>
+<div class="box">div3</div>
+<br><br>
+<div class="box">div1</div>
+<div class="box" id="box22">div2</div>
+<div class="box">div3</div>
+
+
+
+
+
+</body>
+</html>
