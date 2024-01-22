@@ -1,0 +1,8 @@
+div p{
+    /* divin içindeki bütün pleri seçer. */
+    background-color: blue;
+}
+.container div p{
+    /* container içindeki divin içindeki paragraf (.box da olur div yerine */
+    background-color: blueviolet;
+}

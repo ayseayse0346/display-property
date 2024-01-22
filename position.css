@@ -1,0 +1,45 @@
+.main{
+    background-color: rgb(51, 5, 2);
+width: 90%;
+margin: 50px auto;
+}
+
+.box1{
+    background-color: cadetblue;
+ width: 100px;
+ height: 100px;
+ position: static;   
+ /* top: 500px ; işlemez kendi konumunda kalır.elementlerin defaultu. hiç bir şey yapmamış gibi */
+}
+.box2{
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    position: relative; /* sadece bunu yaparsak işlemez top buttom vercez.ilk bulunduğu konuma göre yer aldı.*/
+    top: 20px;
+    left: 50px;
+
+    /* margin-top: 20px;
+   margin-left: 50px;  sadece bunları yaparsak daha farklı oluyor. positionlarla beraber kullanmak farklı */
+
+   /* z-index: 2; bunları positionlarla kullanırız. böyle yapınca 2 değer box 3 ün üstüne çıktı.  zindexi büyük olan diğerinin üzerinde.*/
+   z-index: 2;
+}
+.box3{
+    background-color: chartreuse;
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    /* z-index: 2; */
+    position: absolute; /* box 4 altta kaldı.*/
+
+    /* taşıyıcııs main. */
+}
+.box4{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}
+
+/* !! position absolute: 1)parente (taşıyıcısı) nerdeyse oraya konumlanır.2) akıştan çıkar. parentenda relative arar.  */
